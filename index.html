@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="bg-[#FFF0BE] h-screen flex flex-col items-center space-y-10 pt-5"
+    >
+      <h1 class="text-4xl">Search Photos</h1>
+      <form
+        id="formInput"
+        class="w-3/4 flex items-center bg-white rounded-xl outline outline-cyan-400"
+      >
+        <input
+          id="iputSearch"
+          class="size-full p-4 outline-none"
+          placeholder="Search"
+          type="text"
+        />
+        <i class="fa-solid fa-magnifying-glass text-cyan-500 p-4 text-2xl"></i>
+      </form>
+      <div class="text-white font-semibold space-x-3">
+        <button id="searchBtn" class="bg-red-500 p-2 w-[150px] rounded-lg">
+          Search
+        </button>
+        <button id="clearBtn" class="bg-red-500 p-2 w-[150px] rounded-lg">
+          Clear
+        </button>
+      </div>
+      <div id="photosContiner" class="gap-8 grid grid-cols-5"></div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
